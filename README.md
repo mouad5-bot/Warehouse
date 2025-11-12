@@ -5,7 +5,7 @@ The ClusteredData Warehouse offers a robust API for managing Foreign Exchange (F
 ## API Endpoint
 
 ### URL:
-- **[POST] http://localhost:9999/api/v1FXDeals**
+- **[POST] http://localhost:9999/api/v1/FXDeals**
 - **[GET]  http://localhost:9999/api/v1/FXDeals**
 
 ### Sample Request JSON:
