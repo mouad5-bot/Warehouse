@@ -9,7 +9,7 @@ The ClusteredData Warehouse offers a robust API for managing Foreign Exchange (F
 - **[GET]  http://localhost:9999/api/v1/FXDeals**
 
 ### Sample Request JSON:
-```json
+```shell
 {
   "orderingCurrencyIsoCode": "TEST1",
   "toCurrencyIsoCode": "TEST2",
@@ -19,7 +19,7 @@ The ClusteredData Warehouse offers a robust API for managing Foreign Exchange (F
 
 ## Project Directory Structure
 
-```json
+```javascript
 
 WAREHOUSE
 │   docker-compose.yml
@@ -168,22 +168,23 @@ WAREHOUSE
 
 ## Running the Application with Docker
 You can start the application using Docker Compose:
-```json
+```shell
 docker compose up
 ```
 
 Or via the Makefile:
-```json
+```shell
+
 make run
 make run-detached
 ```
 ## Database Setup
 Start the database container:
-```json
+```shell
 docker exec -it warehouse-postgres-db bash
 ```
 Connect to PostgreSQL:
-```json
+```shell
 psql -U postgres -d warehouse
 ```
 
@@ -198,6 +199,6 @@ It logs service method parameters, execution success, and errors to provide deta
 
 
 ## Stopping the Application
-```json
+```shell
 make stop
 ```
